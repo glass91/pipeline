@@ -25,8 +25,8 @@ pipeline {
                     $class: 'GitSCM',
                     branches: [[name: 'op/setting_up_instance_and_node_js_app']],
                     userRemoteConfigs: [[
-                        url: 'https://github.com/LocalCoding/DevOps_jenkins_tf_ans_node_js_setup.git',
-                        credentialsId: 'git_access_PAT'
+                        url: 'https://github.com/glass91/pipeline.git',
+                        credentialsId: 'git_access_PA' //Jenkins, User_Name_and_Password
                     ]]
                 ])
             }
