@@ -23,7 +23,7 @@ pipeline {
             steps {
                 checkout([
                     $class: 'GitSCM',
-                    branches: [[name: 'op/setting_up_instance_and_node_js_app']],
+                    branches: [[name: 'main']],
                     userRemoteConfigs: [[
                         url: 'https://github.com/glass91/pipeline.git',
                         credentialsId: 'git_access_PA' //Jenkins, User_Name_and_Password
