@@ -12,7 +12,7 @@ terraform {
 
   required_version = ">= 1.3"
   backend "s3" {
-    bucket = "terraform-state-test-my-cloud"
+    bucket = "bucketforjenkins"
     key    = "nodejsapp_example/terraform.tfstate"
     region = "us-east-1"
   }
