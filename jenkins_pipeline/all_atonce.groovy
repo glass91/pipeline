@@ -102,7 +102,7 @@ pipeline {
                 withCredentials([sshUserPrivateKey(credentialsId: 'jenkins-ansible', keyFileVariable: 'SSH_KEY')]) {
                     dir('terraform_ansible_generic_instace_setup_template/ansible'){
                         sh '''
-                        ansible-playbook -i instance_ip.txt playbook_nodejs_playbook_nodejs_dadjokes.yaml -u ubuntu --private-key=$SSH_KEY -e 'ansible_ssh_common_args="-o StrictHostKeyChecking=no"'
+                        ansible-playbook -i instance_ip.txt playbook_nodejs_dadjokes.yaml -u ubuntu --private-key=$SSH_KEY -e 'ansible_ssh_common_args="-o StrictHostKeyChecking=no"'
                         '''
                     }
                 }
