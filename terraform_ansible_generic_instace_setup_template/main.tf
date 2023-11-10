@@ -13,7 +13,7 @@ terraform {
   required_version = ">= 1.3"
   backend "s3" {
     bucket = "bucketforjenkins"
-    key    = "nodejsapp_example/terraform.tfstate"
+    key    = "jenkins-ansible/terraform.tfstate"
     region = "us-east-1"
   }
 }
